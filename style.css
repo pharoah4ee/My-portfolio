@@ -10,18 +10,25 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(180deg, #000000 0%, #1a0000 25%, #330000 50%, #660000 75%, #cc0000 100%);
+    background: linear-gradient(
+        180deg,
+        #FDFCF5,  /* light beige */
+        #F7F3E9,  /* cream */
+        #EDE3D7,  /* pale beige */
+        #E1D2C1,  /* warm beige */
+        #D6C4B2   /* deeper beige */
+    );
     background-attachment: fixed;
-    color: #ffffff;
+    color: #2B2B2B;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Navigation Bar */
 .navbar {
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(253, 252, 245, 0.95);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -32,8 +39,8 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(0, 0, 0, 0.98);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(253, 252, 245, 0.98);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -48,13 +55,13 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #2B2B2B;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .logo:hover {
-    color: #ff4444;
+    color: #cc0000;
 }
 
 .nav-menu {
@@ -65,7 +72,7 @@ body {
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #2B2B2B;
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -75,7 +82,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #ff4444;
+    color: #cc0000;
 }
 
 .nav-link::after {
@@ -85,7 +92,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background: linear-gradient(90deg, #ff4444, #ff6666);
+    background: linear-gradient(90deg, #cc0000, #ff4444);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -98,7 +105,7 @@ body {
     display: none;
     background: none;
     border: none;
-    color: #ffffff;
+    color: #2B2B2B;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -118,8 +125,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #ffffff, #ff6666);
-    background-clip: text;
+    background: linear-gradient(135deg, #2B2B2B, #cc0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fadeInUp 1s ease-out;
@@ -127,7 +133,7 @@ body {
 
 .hero-content h2 {
     font-size: 1.8rem;
-    color: #ffcccc;
+    color: #6E5C4D;
     margin-bottom: 2rem;
     font-weight: 300;
     animation: fadeInUp 1s ease-out 0.2s both;
@@ -135,7 +141,7 @@ body {
 
 .hero-content p {
     font-size: 1.2rem;
-    color: #e0e0e0;
+    color: #5A4C3C;
     max-width: 600px;
     margin: 0 auto 3rem auto;
     animation: fadeInUp 1s ease-out 0.4s both;
@@ -163,29 +169,29 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #ff4444, #cc0000);
+    background: linear-gradient(135deg, #cc0000, #a80000);
     color: #ffffff;
     border: none;
     cursor: pointer;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #ff6666, #ff0000);
+    background: linear-gradient(135deg, #ff4444, #cc0000);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 68, 68, 0.4);
+    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #ffffff;
-    border: 2px solid #ff4444;
+    color: #2B2B2B;
+    border: 2px solid #cc0000;
 }
 
 .btn-secondary:hover {
-    background: #ff4444;
+    background: #cc0000;
     color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 68, 68, 0.3);
+    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.2);
 }
 
 /* Container */
@@ -205,27 +211,26 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #2B2B2B;
 }
 
 /* Cards */
 .card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #FAF8F2;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 2.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
     animation: fadeInUp 0.8s ease-out;
+    color: #2B2B2B;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-    border-color: rgba(255, 68, 68, 0.3);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    border-color: rgba(204, 0, 0, 0.3);
 }
 
 .card-header {
@@ -235,24 +240,23 @@ body {
 
 .card-header h2 {
     font-size: 2.2rem;
-    color: #ffffff;
+    color: #2B2B2B;
     margin-bottom: 0.5rem;
 }
 
 .card-header h3 {
     font-size: 1.5rem;
-    color: #ff6666;
+    color: #cc0000;
     margin-bottom: 0.5rem;
 }
 
 .card-header p {
-    color: #cccccc;
-    font-size: 1rem;
+    color: #6E5C4D;
 }
 
 .card-content p {
     font-size: 1.1rem;
-    color: #e0e0e0;
+    color: #4A3F36;
     margin-bottom: 1.5rem;
     text-align: justify;
 }
@@ -266,7 +270,7 @@ body {
 }
 
 .skill-category h3 {
-    color: #ff6666;
+    color: #cc0000;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -278,7 +282,7 @@ body {
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, #ff4444, #cc0000);
+    background: linear-gradient(135deg, #cc0000, #ff4444);
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -289,7 +293,7 @@ body {
 
 .skill-tag:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(255, 68, 68, 0.3);
+    box-shadow: 0 5px 15px rgba(204, 0, 0, 0.3);
 }
 
 /* Experience Section */
@@ -301,12 +305,12 @@ body {
 
 .experience-card .card-header {
     text-align: left;
-    border-bottom: 2px solid #ff4444;
+    border-bottom: 2px solid #cc0000;
     padding-bottom: 1rem;
 }
 
 .company {
-    color: #ff6666;
+    color: #cc0000;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -317,7 +321,7 @@ body {
 }
 
 .achievement-list li {
-    color: #e0e0e0;
+    color: #4A3F36;
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
@@ -327,7 +331,7 @@ body {
 
 .achievement-list li::before {
     content: '▸';
-    color: #ff4444;
+    color: #cc0000;
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -341,13 +345,13 @@ body {
 
 .placeholder-content h3 {
     font-size: 2rem;
-    color: #ff6666;
+    color: #cc0000;
     margin-bottom: 1rem;
 }
 
 .placeholder-content p {
     font-size: 1.1rem;
-    color: #cccccc;
+    color: #5A4C3C;
     margin-bottom: 2rem;
     max-width: 500px;
     margin-left: auto;
@@ -369,12 +373,12 @@ body {
     display: block;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ff4444;
+    color: #cc0000;
     margin-bottom: 0.5rem;
 }
 
 .stat-label {
-    color: #cccccc;
+    color: #5A4C3C;
     font-size: 1rem;
 }
 
@@ -390,7 +394,7 @@ body {
 
 .form-group label {
     display: block;
-    color: #ffffff;
+    color: #2B2B2B;
     font-weight: 600;
     margin-bottom: 0.5rem;
     font-size: 1rem;
@@ -400,10 +404,10 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
+    background: #FAF8F2;
+    color: #2B2B2B;
     font-size: 1rem;
     transition: all 0.3s ease;
     font-family: inherit;
@@ -412,9 +416,9 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #ff4444;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+    border-color: #cc0000;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px rgba(204, 0, 0, 0.2);
 }
 
 .form-group textarea {
@@ -424,9 +428,9 @@ body {
 
 /* Footer */
 .footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: #F7F3E9;
     backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 3rem 0 1rem 0;
     margin-top: 5rem;
 }
@@ -441,12 +445,12 @@ body {
 }
 
 .footer-info h3 {
-    color: #ffffff;
+    color: #2B2B2B;
     margin-bottom: 0.5rem;
 }
 
 .footer-info p {
-    color: #cccccc;
+    color: #6E5C4D;
 }
 
 .social-links {
@@ -455,7 +459,7 @@ body {
 }
 
 .social-link {
-    background: linear-gradient(135deg, #ff4444, #cc0000);
+    background: linear-gradient(135deg, #cc0000, #ff4444);
     color: #ffffff;
     padding: 0.8rem 1.5rem;
     border-radius: 10px;
@@ -465,16 +469,16 @@ body {
 }
 
 .social-link:hover {
-    background: linear-gradient(135deg, #ff6666, #ff0000);
+    background: linear-gradient(135deg, #ff6666, #cc0000);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 68, 68, 0.3);
+    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.2);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #cccccc;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: #6E5C4D;
 }
 
 /* Animations */
@@ -500,11 +504,11 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.98);
+        background: rgba(253, 252, 245, 0.98);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(20px);
         padding: 2rem 0;
         gap: 1rem;
